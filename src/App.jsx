@@ -5,7 +5,6 @@ function App() {
   const [users, setUsers] = useState([]);
   const [headings, setHeadings] = useState([]);
 
-  // Fetch data from API
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
